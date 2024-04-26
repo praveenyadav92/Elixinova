@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/* Begin core files
+    ======================== */
+
+@import "custom-style/core/variables";
+@import "custom-style/core/mixins";
+@import "custom-style/core/typography";
+
+/* End core files
+    ======================== */
+
+@import "custom-style/layouts/footer";
+@import "custom-style/layouts/header";
+
+/* Begin component files
+    ======================== */
+
+@import "custom-style/components/basic";
+
+/* End component files
+    ======================== */
+
+

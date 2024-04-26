@@ -1,0 +1,422 @@
+/* Begin core files
+    ======================== */
+body {
+  --baseBlack: 0, 0, 0;
+  --baseWhite: 255, 255, 255;
+  --black: rgb(var(--baseBlack));
+  --white: rgb(var(--baseWhite));
+  --black2: #191e28;
+  --black3: #333333;
+  --blue: #05111f;
+  --grey: #efefef;
+  --grey2: #a6a8b4;
+  --grey3: #666666;
+  --grey4:#919191;
+  --grey5: #F9F8F8;
+  --red: #EB5757;
+  --orange: #f16f1d;
+  --warning: #FFBA33;
+  --bgPrimary: #131146;
+  --bgSecondary: #20CAE3;
+  --bgTertiary: #8DD1D3;
+  --bgQuartile: #CCCCCC;
+  --bgwarning: #FFBA33;
+  --bgWhite: #fff;
+  --bg-transparent: #00000000;
+  --bgRed: #EB5757;
+  --bgDarkShade: #002f00;
+  --TextPrimary: #131146;
+  --textSecondary: #333333;
+  --textTertiary: #20CAE3;
+  --textquartile: #fff;
+  --textWhite: #fff;
+  --textBlack: #000;
+  --borderClr1: #20CAE3;
+  --borderClr2: #0F0D3F;
+  --borderClr3: #333333;
+  --borderClr4: #000;
+  --borderClr5: #fff;
+  --fontThin: 100;
+  --fontLight: 300;
+  --fontRegular: 400;
+  --fontMedium: 500;
+  --fontBold: 700;
+  --fontBolder: 800;
+  --fontSize12: 12px;
+  --fontSize14: 14px;
+  --fontSize15: 15px;
+  --fontSize16: 16px;
+  --fontSize18: 18px;
+  --fontSize20: 20px;
+  --fontSize22: 22px;
+  --fontSize24: 24px;
+  --fontSize26: 26px;
+  --fontSize28: 28px;
+  --fontSize30: 30px;
+  --fontSize36: 36px;
+  --fontSize45: 45px;
+  --fontSize60: 60px;
+  --fm1-Regular: "KarantinaRegular";
+  --fm1-Light: "KarantinaLight";
+  --fm1-Bold: "KarantinaBold";
+  --fm2-Regular: "GothamBook";
+  --fm2-Medium: "GothamMedium";
+  --fm2-Black: "GothamBlack";
+  --fm2-Bold: "GothamBold";
+}
+
+/* Declaration */
+/* @include box-shadow2(-1px -1px 2px rgba(0, 0, 0, .05), 0 1px 1px white inset) */
+/* Transform */
+/* rotate */
+/* scale */
+/* translate */
+/* skew */
+/* transform origin */
+/* Image Cover Size */
+/* Sizes */
+/* Image Object Fit */
+/* 
+ @include keyframes(background) {
+   0% {
+     background: white;
+   }
+   50% {
+     background: lightblue;
+   }
+   100% {
+     background: royalblue;
+   } 
+}
+*/
+/*
+
+    .site-header {
+    padding: 2rem;
+    font-size: 1.8rem;
+    @include mq('tablet-wide') {
+        padding-top: 4rem;
+        font-size: 2.4rem;
+    }
+}*/
+/* .logo {
+background-image: url("img/logo.png");
+  @include retina("img/logo@2x.png", 100px, 21px);
+}*/
+/* usage @include font-face("MyFont", "path/to/MyFont", $style: normal, $weight: normal); */
+body {
+  width: 100%;
+  height: 100%;
+  overscroll-behavior-y: none;
+  scrollbar-width: thin;
+  overscroll-behavior-y: none;
+  background-color: var(--themeClr2);
+  font-weight: var(--fontMedium);
+  font-family: var(--font-secondary);
+  font-size: var(--fontSize14);
+}
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+a:hover {
+  color: var(--lightBlue);
+}
+
+ul li,
+ol li,
+ul,
+ol {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+@media only screen and (min-width: 1920px) {
+  .custom_container {
+    max-width: 1728px;
+  }
+}
+
+.scrollBar-smallWidth, body * {
+  scrollbar-width: thin;
+  /* Track */
+  /* Handle */
+}
+.scrollBar-smallWidth::-webkit-scrollbar, body ::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+.scrollBar-smallWidth::-webkit-scrollbar-track, body ::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+.scrollBar-smallWidth::-webkit-scrollbar-thumb, body ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+.scrollBar-smallWidth::-webkit-scrollbar-thumb:window-inactive, body ::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Begin Animation key frames */
+@keyframes leftToRightAnimate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -550px 0;
+  }
+}
+@font-face {
+  font-family: "GothamBook";
+  src: url("../fonts/GothamBook.eot");
+  src: url("../fonts/GothamBook.eot") format("embedded-opentype"), url("../fonts/GothamBook.woff2") format("woff2"), url("../fonts/GothamBook.woff") format("woff"), url("../fonts/GothamBook.ttf") format("truetype"), url("../fonts/GothamBook.svg#GothamBook") format("svg");
+}
+@font-face {
+  font-family: "GothamMedium";
+  src: url("../fonts/GothamMedium.eot");
+  src: url("../fonts/GothamMedium.eot") format("embedded-opentype"), url("../fonts/GothamMedium.woff2") format("woff2"), url("../fonts/GothamMedium.woff") format("woff"), url("../fonts/GothamMedium.ttf") format("truetype"), url("../fonts/GothamMedium.svg#GothamMedium") format("svg");
+}
+@font-face {
+  font-family: "GothamBlack";
+  src: url("../fonts/GothamBlack.eot");
+  src: url("../fonts/GothamBlack.eot");
+  src: url("../fonts/GothamBlack.eot") format("embedded-opentype"), url("../fonts/GothamBlack.woff2") format("woff2"), url("../fonts/GothamBlack.woff") format("woff"), url("../fonts/GothamBlack.ttf") format("truetype"), url("../fonts/GothamBlack.svg#GothamBlack") format("svg");
+}
+@font-face {
+  font-family: "GothamBold";
+  src: url("../fonts/GothamBold.eot");
+  src: url("../fonts/GothamBold.eot") format("embedded-opentype"), url("../fonts/GothamBold.woff2") format("woff2"), url("../fonts/GothamBold.woff") format("woff"), url("../fonts/GothamBold.ttf") format("truetype"), url("../fonts/GothamBold.svg#GothamBold") format("svg");
+}
+@font-face {
+  font-family: "KarantinaBold";
+  src: url("../fonts/Karantina-Bold.eot");
+  src: url("../fonts/Karantina-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Karantina-Bold.woff2") format("woff2"), url("../fonts/Karantina-Bold.woff") format("woff"), url("../fonts/Karantina-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "KarantinaLight";
+  src: url("../fonts/Karantina-Light.eot");
+  src: url("../fonts/Karantina-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Karantina-Light.woff2") format("woff2"), url("../fonts/Karantina-Light.woff") format("woff"), url("../fonts/Karantina-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "KarantinaRegular";
+  src: url("../fonts/Karantina-Regular.eot");
+  src: url("../fonts/Karantina-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Karantina-Regular.woff2") format("woff2"), url("../fonts/Karantina-Regular.woff") format("woff"), url("../fonts/Karantina-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* End core files
+    ======================== */
+.main__header {
+  position: relative;
+  overflow: hidden;
+}
+.main__header .announcment {
+  display: flex;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  background-image: url(/static/dist/images/Rectangle-420.png);
+}
+.main__header .announcment-heading {
+  font-size: var(--fontSize14);
+  padding: 15px;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: "GothamBook";
+}
+.main__header .announcment-content {
+  width: 100%;
+}
+.main__header .announcment-content .marquee__item {
+  font-size: var(--fontSize12);
+  color: var(--white);
+  position: relative;
+  padding: 0px 15px;
+}
+.main__header .announcment-content .marquee__item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--themeSecondary);
+  border-radius: 50%;
+  background-clip: padding-box;
+  left: -4px;
+  top: 1px;
+}
+.main__header .announcment-content .marquee__item + .marquee__item {
+  margin-left: 30px;
+}
+.main__header .main__nav {
+  position: absolute;
+  background: var(--white);
+  top: 51px;
+  width: 100%;
+}
+.main__header .main__nav-container {
+  display: flex;
+  padding: 10px 0px;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.main__header .main__nav-container .main-logo .u-img {
+  max-width: 150px;
+}
+.main__header .main__nav-container .global_navs-grid {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .main__header .main__nav-container .global_navs-grid {
+    display: flex;
+  }
+}
+.main__header .main__nav-container .action_view-list {
+  display: flex;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.main__header .main__nav-container .action_view-item {
+  display: flex;
+}
+.main__header .main__nav-container .action_view-item:not(:first-child) {
+  margin-left: 10px;
+}
+.main__header .main__nav-container .action_view-link .u-icon {
+  max-width: 30px;
+}
+.main__header .hero__banner {
+  position: relative;
+  overflow: hidden;
+  top: 63px;
+}
+.main__header .hero__banner-media {
+  width: 100%;
+}
+.main__header .hero__banner-media .u-img {
+  height: 80vh;
+}
+@media only screen and (min-width: 992px) {
+  .main__header .hero__banner-media .u-img {
+    height: auto;
+  }
+}
+.main__header .hero__banner .circle {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.031372549);
+  border-radius: 50%;
+  animation: glow 3s infinite;
+}
+.main__header .hero__banner .one {
+  width: 150px;
+  height: 150px;
+}
+.main__header .hero__banner .two {
+  width: 300px;
+  height: 300px;
+}
+.main__header .hero__banner .three {
+  width: 450px;
+  height: 450px;
+}
+.main__header .hero__banner .four {
+  width: 600px;
+  height: 600px;
+}
+.main__header .hero__banner .five {
+  width: 750px;
+  height: 750px;
+}
+.main__header .hero__banner .six {
+  width: 900px;
+  height: 900px;
+}
+.main__header .hero__banner .hero__banner-wrapper {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Begin component files
+    ======================== */
+.services {
+  background-image: url("../../../../images/background.svg");
+  background-repeat: no-repeat;
+  position: relative;
+}
+.services__main--title {
+  color: var(--textSecondary);
+  font-size: var(--fontSize60);
+  font-family: var(--fm2-Black);
+  text-transform: uppercase;
+  text-align: center;
+}
+@media only screen and (min-width: 400px) {
+  .services__main--title {
+    font-size: var(--fontSize30);
+  }
+}
+.services__cards {
+  display: flex;
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  margin-right: -15px;
+  flex-wrap: wrap;
+}
+.cardView {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 2px solid var(--grey);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px;
+}
+.cardView__content .cardView__title {
+  padding-top: 15px;
+}
+.cardView__content .cardView__content {
+  padding-top: 15px;
+}
+@media only screen and (min-width: 640px) {
+  .cardView {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cardView {
+    width: calc(50% - 30px);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .cardView {
+    width: calc(33.3333333333% - 30px);
+  }
+}
+
+/* End component files
+    ======================== *//*# sourceMappingURL=default.css.map */

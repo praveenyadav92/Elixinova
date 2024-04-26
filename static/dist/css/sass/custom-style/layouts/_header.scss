@@ -1,0 +1,303 @@
+// .c-header {
+//   &__top {
+//     background-color: var(--themeDarkShade);
+//     padding: 11px 0;
+
+//     &_animation {
+//       height: 48px;
+//       animation: leftToRightAnimate 35s linear alternate infinite;
+//     }
+
+//     &_info {
+//       height: 100%;
+//       @include flexbox;
+//       @include align-items(center);
+
+//       ul {
+//         @include flexbox;
+//         li {
+//           @include flexbox;
+//           @include flex-direction(column, vertical);
+//           color: var(--white);
+//           font-size: $font12;
+
+//           + li {
+//             border-left: 1px solid var(--white);
+//             margin-left: 15px;
+//             padding-left: 15px;
+//           }
+//         }
+//       }
+//     }
+
+//     &_logos {
+//       @include flexbox;
+//       @include justify-content(flex-end);
+//       img + img {
+//         margin-left: 40px;
+//       }
+//     }
+//   }
+
+//   &__main {
+//     &.sticky_header {
+//       background-color: var(--white);
+//       position: fixed;
+//       top: 0;
+//       width: 100%;
+//       z-index: 999;
+
+//       .c-header__main_container {
+//         margin-top: 0;
+
+//         &_logo a img {
+//           width: 150px;
+//         }
+//       }
+//     }
+
+//     &_container {
+//       background-color: rgba(var(--baseWhite), 0.68);
+//       margin-top: 20px;
+//       @include border-radius(16px);
+//       padding: 10px 22px;
+//       position: relative;
+//       z-index: 100;
+//       @include flexbox;
+//       @include justify-content(space-between);
+//       @include align-items(center);
+//       height: inherit;
+
+//       @include mq('tablet') {
+//         height: 90px;
+//         margin-left: -20px;
+//         margin-right: -20px;
+//       }
+
+//       &_logo {
+//         a {
+//           display: block;
+//           img {
+//             max-width: 140px;
+//             height: inherit;
+
+//             @include mq('tablet') {
+//               max-width: 180px;
+//             }
+//           }
+//         }
+//       }
+//     }
+
+//     &_nav {
+//       @include mq('tablet-max') {
+//         @include flexbox;
+//         @include align-items(center);
+//       }
+//       &_overlay {
+//         display: none;
+//         background-color: rgba(var(--baseBlack), 0.7);
+//         position: fixed;
+//         top: 0;
+//         width: 100%;
+//         height: 100%;
+//         z-index: 1;
+//         left: 0;
+//       }
+
+//       &_wrapper {
+//         display: none;
+
+
+//         @include mq('tablet-max') {
+//           @include flexbox;
+//           @include align-items(center);
+//         }
+//       }
+
+//       &.active {
+//         .c-header__main_nav_wrapper {
+//           position: fixed;
+//           top: 0;
+//           right: 0;
+//           width: 70%;
+//           height: 100%;
+//           background-color: var(--white);
+//           z-index: 10;
+//         }
+//         .c-header__main_nav_overlay,
+//         .c-header__main_nav_wrapper {
+//           display: block;
+//         }
+//       }
+//       &_btns {
+//         display: none !important;
+//         @include mq('desktop-wide') {
+//           display: flex !important;
+//         }
+//       }
+//     }
+
+//     &_mob_nav {
+//       @include flexbox;
+//       @include mq('desktop-wide') {
+//         display: none;
+//       }
+//       &_icon {
+//         &.menu {
+//           display: block;
+//           @include mq('tablet-max') {
+//             display: none;
+//           }
+
+//         }
+//       }
+//       img {
+//         max-width: 35px;
+//         padding-left: 10px;
+//         margin-left: 10px;
+//       }
+//     }
+//   }
+// }
+.main__header{
+  position: relative;
+  overflow: hidden;
+  .announcment{
+    @include flexbox();
+    @include align-items(center);
+    background-image: url(/static/dist/images/Rectangle-420.png);
+    
+    &-heading{
+     font-size: $font14;
+     padding: 15px;
+     background-color: var(--black);
+     color: var(--white);
+     font-family: 'GothamBook';
+    }
+    &-content{
+      width: 100%;
+      
+      .marquee__item{
+        font-size: $font12;
+        color: var(--white);
+        position: relative;
+        padding: 0px 15px;
+        &::before{
+          content: "";
+          position: absolute;
+          display: block;
+          width: 10px;
+          height: 10px;
+          background-color: var(--themeSecondary);
+          @include border-radius(50%);
+          left: -4px;
+          top: 1px;
+        }
+        + .marquee__item{
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+  .main__nav{
+    position: absolute;
+    background: var(--white);
+    top: 51px;
+    width: 100%;
+    &-container{
+      @include flexbox();
+      padding: 10px 0px;
+      @include justify-content(space-between);
+      @include align-items(center);
+      .main-logo{
+        .u-img{
+          max-width: 150px;
+        }
+      }
+      .global_navs-grid{
+        display: none;
+        @include mq('tablet-max'){
+          @include flexbox();
+        }
+      }
+      .action_view{
+        &-list{
+          @include flexbox();
+          @include align-items(center);
+        }
+        &-item {
+          @include flexbox();
+          &:not(:first-child) {
+            margin-left: 10px; 
+        }
+      } 
+        &-link{
+          .u-icon{
+            max-width: 30px;
+          }
+        }
+      }
+    }
+  }
+  .hero__banner{
+    position: relative;
+    overflow: hidden;
+    top: 63px;
+    &-media{
+      width: 100%;
+      .u-img{
+        height: 80vh;
+        @include mq('tablet-max'){
+          height: auto;
+        }
+        
+      }
+    }
+   
+    .circle {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255, 255, 255, 0.031372549);
+      border-radius: 50%;
+      animation: glow 3s infinite;
+    }
+    .one{
+      width: 150px;
+      height: 150px;
+    }
+    .two{
+      width: 300px;
+      height: 300px;
+    }
+    .three{
+      width: 450px;
+      height: 450px;
+    }
+    .four{
+      width: 600px;
+      height: 600px;
+    }
+    .five{
+      width: 750px;
+      height: 750px;
+    }
+    .six{
+      width: 900px;
+      height: 900px;
+    }
+    .hero__banner-wrapper{
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50% , -50%);
+      &--head{
+        
+      }
+    }
+    
+  }
+  
+}

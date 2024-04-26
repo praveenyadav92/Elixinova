@@ -1,0 +1,86 @@
+body {
+  --baseBlack: 0, 0, 0;
+  --baseWhite: 255, 255, 255;
+  --black: rgb(var(--baseBlack));
+  --white: rgb(var(--baseWhite));
+  --black2: #191e28;
+  --black3: #333333;
+  --blue: #05111f;
+  --grey: #efefef;
+  --grey2: #a6a8b4;
+  --grey3: #666666;
+  --grey4:#919191;
+  --grey5: #F9F8F8;
+  --red: #EB5757;
+  --orange: #f16f1d;
+  --warning: #FFBA33;
+  --bgPrimary: #131146;
+  --bgSecondary: #20CAE3;
+  --bgTertiary: #8DD1D3;
+  --bgQuartile: #CCCCCC;
+  --bgwarning: #FFBA33;
+  --bgWhite: #fff;
+  --bg-transparent: #00000000;
+  --bgRed: #EB5757;
+  --bgDarkShade: #002f00;
+  --TextPrimary: #131146;
+  --textSecondary: #333333;
+  --textTertiary: #20CAE3;
+  --textquartile: #fff;
+  --textWhite: #fff;
+  --textBlack: #000;
+  --borderClr1: #20CAE3;
+  --borderClr2: #0F0D3F;
+  --borderClr3: #333333;
+  --borderClr4: #000;
+  --borderClr5: #fff;
+
+  --fontThin: 100;
+  --fontLight: 300;
+  --fontRegular: 400;
+  --fontMedium: 500;
+  --fontBold: 700;
+  --fontBolder: 800;
+
+  --fontSize12: 12px;
+  --fontSize14: 14px;
+  --fontSize15: 15px;
+  --fontSize16: 16px;
+  --fontSize18: 18px;
+  --fontSize20: 20px;
+  --fontSize22: 22px;
+  --fontSize24: 24px;
+  --fontSize26: 26px;
+  --fontSize28: 28px;
+  --fontSize30: 30px;
+  --fontSize36: 36px;
+  --fontSize45: 45px;
+  --fontSize60: 60px;
+
+  --fm1-Regular: "KarantinaRegular";
+  --fm1-Light: "KarantinaLight";
+  --fm1-Bold: "KarantinaBold";
+
+  --fm2-Regular: "GothamBook";
+  --fm2-Medium: "GothamMedium";
+  --fm2-Black: "GothamBlack";
+  --fm2-Bold: "GothamBold";
+}
+
+
+$font12: var(--fontSize12);
+$font14: var(--fontSize14);
+$font15: var(--fontSize15);
+$font16: var(--fontSize16);
+$font18: var(--fontSize18);
+$font20: var(--fontSize20);
+$font22: var(--fontSize22);
+$font24: var(--fontSize24);
+$font26: var(--fontSize26);
+$font28: var(--fontSize28);
+$font30: var(--fontSize30);
+$font36: var(--fontSize36);
+$font40: var(--fontSize40);
+$font42: var(--fontSize42);
+$font45: var(--fontSize45);
+$font60: var(--fontSize60);
