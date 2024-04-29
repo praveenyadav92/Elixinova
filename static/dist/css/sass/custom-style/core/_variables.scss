@@ -53,9 +53,11 @@ body {
   --fontSize26: 26px;
   --fontSize28: 28px;
   --fontSize30: 30px;
+  --fontSize34: 34px;
   --fontSize36: 36px;
   --fontSize45: 45px;
   --fontSize60: 60px;
+  --fontSize52: 52px;
 
   --fm1-Regular: "KarantinaRegular";
   --fm1-Light: "KarantinaLight";
@@ -79,8 +81,10 @@ $font24: var(--fontSize24);
 $font26: var(--fontSize26);
 $font28: var(--fontSize28);
 $font30: var(--fontSize30);
+$font34: var(--fontSize34);
 $font36: var(--fontSize36);
 $font40: var(--fontSize40);
 $font42: var(--fontSize42);
 $font45: var(--fontSize45);
+$font52: var(--fontSize52);
 $font60: var(--fontSize60);
