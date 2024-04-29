@@ -510,89 +510,20 @@ ol {
   }
 }
 
-.signup {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.signup__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.signup__content .form__main--title {
-  font-size: var(--fontSize52);
-  font-family: var(--fm1-Bold);
-  border-bottom: 2px solid var(--grey);
-}
-.signup__content .form__main--subhead {
-  font-size: var(--fontSize26);
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.signup__content .form__main--btn {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.signup__content .form__main--back {
-  color: var(--TextPrimary);
-  text-decoration: none;
-  font-size: var(--fontSize18);
+.login__wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 15px;
-}
-@media only screen and (min-width: 992px) {
-  .signup {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-.form__fileds {
-  display: flex;
   flex-direction: column;
 }
-.form__fileds--head {
-  font-size: var(--fontSize18);
-  padding-bottom: 5px;
+.login__wrapper-main {
+  padding-top: 30px;
 }
-.form__fileds--req {
-  color: var(--red);
+.login__wrapper-head {
+  border-bottom: 1px solid var(--grey);
 }
-.form__fileds--content {
-  background-color: var(--grey5);
-  border-radius: 12px;
-  padding: 10px;
-  border: none;
-  font-size: var(--fontSize18);
-  font-family: var(--fm2-Medium);
-  margin-bottom: 15px;
-  color: var(--grey4);
-}
-
-.signup__media {
+.login__wrapper-infrographic {
+  display: none;
   background-image: url("/static/dist/images/banner.png"), linear-gradient(to right, #0D1535, #290281);
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.signup__media--img {
-  width: 60%;
-  padding: 20px;
-}
-
-.btn__v3 {
-  background-color: var(--bgSecondary);
-  width: 100%;
-  color: var(--bgWhite);
-  padding: 15px;
-  border: none;
-  border-radius: 36px;
 }
 
 /* End component files
