@@ -56,6 +56,7 @@ body {
   --fontSize34: 34px;
   --fontSize36: 36px;
   --fontSize45: 45px;
+  --fontSize52: 52px;
   --fontSize60: 60px;
   --fontSize52: 52px;
   --fm1-Regular: "KarantinaRegular";
@@ -511,19 +512,119 @@ ol {
 }
 
 .login__wrapper {
+  background-image: url("/static/dist/images/banner.png"), linear-gradient(to right, #0D1535, #290281);
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-}
-.login__wrapper-main {
-  padding-top: 30px;
+  color: var(--bgWhite);
+  height: 100vh;
+  padding: 10px;
 }
 .login__wrapper-head {
-  border-bottom: 1px solid var(--grey);
+  border-bottom: 2px solid var(--grey);
+  padding-bottom: 10px;
+  font-size: var(--fontSize52);
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 992px) {
+  .login__wrapper-main {
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 66px;
+    padding-top: 66px;
+  }
+}
+.login__wrapper .titlePrimary {
+  font-size: var(--fontSize20);
+}
+.login__wrapper .titleSecondary {
+  font-size: var(--fontSize20);
 }
 .login__wrapper-infrographic {
   display: none;
   background-image: url("/static/dist/images/banner.png"), linear-gradient(to right, #0D1535, #290281);
+  width: 100%;
+}
+@media only screen and (min-width: 640px) {
+  .login__wrapper-infrographic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .login__wrapper-infrographic .u-image {
+    width: 50%;
+    padding: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .login__wrapper-infrographic {
+    height: auto;
+  }
+}
+.login__wrapper .login__form-container {
+  margin-top: 15px;
+}
+@media only screen and (min-width: 640px) {
+  .login__wrapper {
+    background-image: none;
+    color: var(--TextPrimary);
+    height: auto;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .login__wrapper {
+    background-image: none;
+    color: var(--TextPrimary);
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.c-form__group {
+  margin-bottom: 20px;
+}
+.c-form__group .u-formField {
+  background-color: var(--grey5);
+  color: var(--grey4);
+  font-size: var(--fontSize18);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  min-width: 300px;
+  margin-top: 5px;
+}
+.c-form__lable {
+  font-size: var(--fontSize18);
+}
+.c-form__lable-req {
+  color: red;
+}
+.c-form-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c-form-backBtn {
+  text-decoration: none;
+  font-size: var(--fontSize18);
+  margin-top: 10px;
+  padding-bottom: 15px;
+  color: var(--bgWhite);
+}
+@media only screen and (min-width: 640px) {
+  .c-form-backBtn {
+    color: var(--TextPrimary);
+  }
+}
+
+.btn.v3 {
+  width: 100%;
+  background-color: var(--bgSecondary);
+  color: var(--textWhite);
+  font-size: var(--fontSize18);
+  border-radius: 30px;
 }
 
 /* End component files

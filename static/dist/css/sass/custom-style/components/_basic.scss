@@ -1,6 +1,3 @@
-
-
-
 .commonPadding {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -12,31 +9,32 @@
     position: relative;
     width: 100%;
     height: 100%;
+
     &__main {
-        &--title{
-            color:var(--textSecondary);
+        &--title {
+            color: var(--textSecondary);
             font-size: $font60;
             font-family: var(--fm2-Black);
             text-transform: uppercase;
             text-align: center;
+
             @include mq ("phone") {
                 font-size: $font30;
-                
+
             }
         }
     }
-    &__cards{
-    display: flex;
-    width: calc(100% + 30px);
-    margin-left: -15px;
-    margin-right: -15px;
-    flex-wrap: wrap;
-    @include mq ("tablet-small") {
-       
 
+    &__cards {
+        display: flex;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        margin-right: -15px;
+        flex-wrap: wrap;
+
+        @include mq ("tablet-small") {}
     }
-    }
-} 
+}
 
 .cardView {
     &.v1 {
@@ -49,35 +47,39 @@
         margin: 15px;
         box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
         background-color: var(--bgWhite);
-       
-        
-       
-        .cardView__content{
-           .cardView__title {
-            font-size: $font22;
-            font-family: var(--fm2-Bold);
-            padding-top: 15px;
-           }
-           .cardView__content {
-            padding-top: 15px;
-            font-size: $font14;
-           }
+
+
+
+        .cardView__content {
+            .cardView__title {
+                font-size: $font22;
+                font-family: var(--fm2-Bold);
+                padding-top: 15px;
+            }
+
+            .cardView__content {
+                padding-top: 15px;
+                font-size: $font14;
+            }
         }
+
         @include mq ("tablet-small") {
             width: 100%;
-    
+
         }
+
         @include mq ("tablet") {
             width: calc(100% / 2 - 30px);
-    
+
         }
+
         @include mq ("tablet-max") {
             width: calc(100% / 3 - 30px);
-    
+
         }
 
     }
-   
+
 }
 
 .technology {
@@ -86,34 +88,36 @@
     position: relative;
     width: 100%;
     height: 100%;
+
     &__main {
         &__subhead {
             font-size: $font14;
         }
-        &--title{
-            color:var(--textSecondary);
+
+        &--title {
+            color: var(--textSecondary);
             font-size: $font60;
             font-family: var(--fm2-Black);
             text-transform: uppercase;
             text-align: center;
+
             @include mq ("phone") {
                 font-size: $font30;
-                
+
             }
         }
     }
-    &__cards{
-    display: flex;
-    width: calc(100% + 30px);
-    margin-left: -15px;
-    margin-right: -15px;
-    flex-wrap: wrap;
-    @include mq ("tablet-small") {
-       
 
+    &__cards {
+        display: flex;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        margin-right: -15px;
+        flex-wrap: wrap;
+
+        @include mq ("tablet-small") {}
     }
-    }
-} 
+}
 
 .cardView {
     &.v2 {
@@ -127,67 +131,200 @@
         margin: 15px;
         box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
         background-color: var(--bgWhite);
-       
-         .cardView__media {
+
+        .cardView__media {
             margin-right: 20px;
             display: flex;
             align-items: center;
-         }
-       
-        .cardView__content{
-           .cardView__title {
-            font-size: $font22;
-            font-family: var(--fm2-Bold);
-            padding-top: 15px;
-           }
-           .cardView__content {
-            padding-top: 15px;
-            font-size: $font14;
-           }
         }
+
+        .cardView__content {
+            .cardView__title {
+                font-size: $font22;
+                font-family: var(--fm2-Bold);
+                padding-top: 15px;
+            }
+
+            .cardView__content {
+                padding-top: 15px;
+                font-size: $font14;
+            }
+        }
+
         @include mq ("tablet-small") {
             width: 100%;
             display: flex;
             flex-direction: row;
-    
+
         }
+
         @include mq ("tablet") {
             width: calc(100% / 1 - 30px);
-    
+
         }
+
         @include mq ("tablet-max") {
             width: calc(100% / 1 - 30px);
-    
+
         }
 
         @include mq ("desktop-min") {
             width: calc(100% / 2 - 30px);
-    
+
         }
-        
+
     }
-   
-    
+
+
 }
- 
+
 
 .login__wrapper {
-
-    display:flex;
+    background-image: url("/static/dist/images/banner.png"), linear-gradient(to right, (#0D1535, #290281));
+    display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    &-main {
-        padding-top: 30px;
-    }
+    color: var(--bgWhite);
+    height: 100vh;
+    padding: 10px;
+
+
 
     &-head {
-        border-bottom: 1px solid var(--grey);
+        border-bottom: 2px solid var(--grey);
+        padding-bottom: 10px;
+        font-size: $font52;
+        margin-bottom: 15px;
+    }
 
+    &-main {
+        @include mq ('tablet-max') {
+            padding-left: 120px;
+            padding-right: 120px;
+            padding-top: 66px;
+            padding-top: 66px;
+
+        }
+
+    }
+
+    .titlePrimary {
+        font-size: $font20;
+    }
+
+    .titleSecondary {
+        font-size: $font20;
     }
 
     &-infrographic {
         display: none;
         background-image: url("/static/dist/images/banner.png"), linear-gradient(to right, (#0D1535, #290281));
+        width: 100%;
+
+        @include mq ('tablet-small') {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .u-image {
+
+                width: 50%;
+                padding: 20px;
+
+            }
+
+        }
+
+        @include mq ('tablet-max') {
+
+            height: auto;
+
+        }
     }
-    
+
+    .login__form-container {
+        margin-top: 15px;
+    }
+
+    @include mq ('tablet-small') {
+        background-image: none;
+        color: var(--TextPrimary);
+        height: auto;
+        padding: 0;
+
+    }
+
+    @include mq ('tablet-max') {
+        background-image: none;
+        color: var(--TextPrimary);
+        display: flex;
+        flex-direction: row;
+       
+   
+    }
+
+}
+
+.c-form {
+    &__group {
+
+        .u-formField {
+            background-color: var(--grey5);
+            color: var(--grey4);
+            font-size: $font18;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            min-width: 300px;
+            margin-top: 5px;
+
+        }
+
+        margin-bottom: 20px;
+    }
+
+    &__lable {
+        font-size: $font18;
+
+        &-req {
+            color: red;
+        }
+
+    }
+
+    &-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-backBtn {
+        text-decoration: none;
+        // color: var(--TextPrimary);
+        font-size: $font18;
+        margin-top: 10px;
+        padding-bottom: 15px;
+        color: var(--bgWhite);
+
+        @include mq ('tablet-small') {
+
+            color: var(--TextPrimary);
+
+
+        }
+    }
+
+
+
+}
+
+.btn {
+    &.v3 {
+        width: 100%;
+        background-color: var(--bgSecondary);
+        color: var(--textWhite);
+        font-size: $font18;
+        border-radius: 30px;
+    }
 }
